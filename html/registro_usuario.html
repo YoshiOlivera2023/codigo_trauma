@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/icono.png" />
+    <title>Registro de usuario</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/estilo_registro.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+    <section>
+        <div class="container ">
+            <div class="row">
+              
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                <br><br>
+                <div class="card">
+                    <div class="card-body">
+                        
+                        <div class="d-flex justify-content-center align-items-center flex-column">
+                            <img src="../img/melipilla_hospital.png" width="200px" class="mb-4">
+                            <h2 class="mb-4">Registro de Usuario</h2>
+                        </div>
+
+                        <form action="#" method="#" class="row g-3" id="formulario" >
+                        
+                            <h6 class="text-danger">Campo obligatorio (*)</h6> 
+
+                            <!-- Ingreso de RUT -->
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="rut" class="form-label">Rut (*)</label>
+                                    <input type="text" id="rut" class="form-control" placeholder="Sin puntos con guión. Ej: 12345678-9">
+                                </div>
+                            </div>
+                            
+                            <!-- Ingreso de nombres -->
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="nombre" class="form-label">Nombres (*)</label>
+                                    <input type="text" id="nombre" class="form-control" placeholder="Ingrese sus nombres">
+                                </div>
+                            </div>
+                            
+                            <!-- Ingreso de apellidos -->
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="paterno" class="form-label">Apellidos (*)</label>
+                                    <input type="text" id="paterno" class="form-control" placeholder="Ingrese sus apellidos">
+                                </div>
+                            </div>
+
+                            <!-- Cargo -->
+                            <div class="col-md-6">
+                                <label for="cargo" class="form-label">Cargo (*)</label>
+                                <select class="form-select" id="cargo" name="cargo">
+                                    <option value="" disabled selected>Selecciona un cargo</option>
+                                    <option value="Categorizador">Administrador del Sistema</option>
+                                    <option value="Médico">Médico</option>
+                                    <option value="Enfermero">Enfermero</option>
+                                    <option value="Paramédico">Paramédico</option>
+                                </select>
+                            </div>
+
+                            <!-- Especialidad -->
+                            <div class="col-md-6">
+                                <label for="especialidad" class="form-label">Especialidad (*)</label>
+                                <select class="form-select" id="especialidad" name="especialidad">
+                                    <option value="" disabled selected>Selecciona una especialidad</option>
+                                    <option value="Medicina General">Medicina General</option>
+                                    <option value="Pediatría">Pediatría</option>
+                                    <option value="Cirugía General">Cirugía General</option>
+                                    <option value="Cardiología">Cardiología</option>
+                                    <option value="Neurología">Neurología</option>
+                                    <option value="Oftalmología">Oftalmología</option>
+                                    <option value="Ginecología y Obstetricia">Ginecología y Obstetricia</option>
+                                    <option value="Dermatología">Dermatología</option>
+                                    <option value="Traumatología">Traumatología</option>
+                                    <option value="Oncología">Oncología</option>
+                                </select>
+                            </div>
+
+                            <!-- Ingreso de turno -->
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="turno" class="form-label">Turno (*)</label>
+                                    <select class="form-select" id="turno" name="turno">
+                                        <option value="" disabled selected>Selecciona un turno</option>
+                                        <option value="Turno1">08:00 am - 19:59 pm</option>
+                                        <option value="Turno2">20:00 pm - 07:59 am</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Ingreso de dirección -->
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="direccion" class="form-label">Dirección (*)</label>
+                                    <input type="text" id="direccion" class="form-control" placeholder="Ingrese su dirección de domicilio">
+                                </div>
+                            </div>
+
+                            <!-- Ingreso de turno -->
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="region" class="form-label">Región (*)</label>
+                                    <select class="form-select" id="region" name="region">
+                                        <option value="" disabled selected>Selecciona una región</option>
+                                        <option value="">Región de Arica y Parinacota</option>
+                                        <option value="">Región de Tarapacá</option>
+                                        <option value="">Región de Antofagasta</option>
+                                        <option value="">Región de Atacama</option>
+                                        <option value="">Región de Coquimbo</option>
+                                        <option value="">Región de Valparaíso</option>
+                                        <option value="">Región Metropolitana</option>
+                                        <option value="">Región de O'Higgins</option>
+                                        <option value="">Región del Maule</option>
+                                        <option value="">Región del Ñuble</option>
+                                        <option value="">Región del Biobío</option>
+                                        <option value="">Región de La Araucanía</option>
+                                        <option value="">Región de Los Ríos</option>
+                                        <option value="">Región de Los Lagos</option>
+                                        <option value="">Región de Aysén</option>
+                                        <option value="">Región de Magallanes</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Ingreso de turno -->
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="comuna" class="form-label">Comuna (*)</label>
+                                    <select class="form-select" id="comuna" name="comuna">
+                                        <option value="" disabled selected>Selecciona un turno</option>
+                                        <option value="Melipilla">Melipilla</option>
+                                        <option value="El Monte">El Monte</option>
+                                        <option value="Talagante">Talagante</option>
+                                        <option value="San Bernardo">San Bernardo</option>
+                                        <option value="Maipú">Maipú</option>
+                                        <option value="La Florida">La Florida</option>
+                                        <option value="San Miguel">San Miguel</option>
+                                        <option value="Puente Alto">Puente Alto</option>
+                                        <option value="San Ramón">San Ramón</option>
+                                        <option value="Cerrillos">Cerrillos</option>
+                                        <option value="Pudahuel">Pudahuel</option>
+                                        <option value="Quilicura">Quilicura</option>
+                                        <option value="Estación Central">Estación Central</option>
+                                        <option value="Santiago">Santiago</option>
+                                        <option value="El Bosque">El Bosque</option>
+                                        <option value="La Cisterna">La Cisterna</option>
+                                        <option value="La Granja">La Granja</option>
+                                        <option value="Lo Espejo">Lo Espejo</option>
+                                        <option value="Lo Prado">Lo Prado</option>
+                                        <option value="Pedro Aguirre Cerda">Pedro Aguirre Cerda</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Ingreso de email -->
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="correo" class="form-label">Correo Electrónico (*)</label>
+                                    <input type="email" id="correo" class="form-control" placeholder="Ingrese su correo electrónico">
+                                </div>
+                            </div>
+
+                            <!-- Ingreso de número de celular -->
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="celular" class="form-label">Número de celular (*)</label>
+                                    <input type="text" id="celular" class="form-control" placeholder="Ingrese su número de celular">
+                                </div>
+                            </div>
+
+                            <!-- Ingreso de contraseña -->
+                            <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="clave" class="form-label">Contraseña (*)</label>
+                                <input type="password" id="clave" class="form-control" placeholder="Ingrese su contraseña">
+                                </div>
+                            </div>
+
+                            <!-- Ingreso de confirmación de contraseña -->
+                            <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="confirmar" class="form-label">Confirmar contraseña (*)</label>
+                                <input type="password" id="confirmar" class="form-control" placeholder="Confirme su contraseña">
+                                </div>
+                            </div>
+
+                            <div>
+                                <p style="color: gray" >Utiliza ocho caracteres como mínimo con una combinación de letras, números y símbolos</p>
+                            </div>
+
+                            
+                            <!-- Botón de Registro -->
+                            <div class="d-grid gap-2">
+                                <button type="submit" class="btn btn-outline-info">Registrarse</button>
+                                <a href="home.html" class="btn btn-outline-info mb-3"><i class="bi bi-arrow-left"></i> Regresar</a>
+                            </div>
+
+                    </form>
+                </div>
+            </div>
+          </div>
+        <div class="col-sm-4"></div>
+      </section><br><br>  
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

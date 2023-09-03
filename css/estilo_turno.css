@@ -1,0 +1,41 @@
+body {
+    position: relative;
+    background-image: url('../img/equipojpg.jpg');
+    background-size: 98%; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    height: 100vh;
+    background-color: rgba(211, 239, 239);
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(211, 239, 239, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.btn-custom {
+    width: 100px;
+    height: 100px;
+    border-radius: 5;
+    font-size: 16px; 
+}
+
+.btn-custom {
+    background-color: #00b7ff; 
+    color: #fff; 
+}
+
+.btn-custom:hover, .btn-custom:focus {
+    background-color: #0056b3;
+    color: #fff; 
+}
+
+.card.custom-card .card-body {
+    padding: 20px;
+}
