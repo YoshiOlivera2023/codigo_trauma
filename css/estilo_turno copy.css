@@ -1,0 +1,58 @@
+body {
+    position: relative;
+    background-image: url('../img/equipojpg.jpg');
+    background-size: 98%; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    height: 100vh;
+    background-color: rgba(211, 239, 239);
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(211, 239, 239, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.card.custom-card .card-body {
+    padding: 20px;
+}
+
+.image-button1 {
+    background-image: url('../img/left.png'); /* Ruta a tu imagen PNG */
+    background-size: cover; /* Ajusta la imagen al tamaño del botón */
+    width: 70px; /* Ancho del botón */
+    height: 70px; /* Alto del botón */
+    border: none; /* Quita el borde del botón si lo deseas */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    border-radius: 50%
+}
+
+.image-button2 {
+    background-image: url('../img/right.png'); /* Ruta a tu imagen PNG */
+    background-size: cover; /* Ajusta la imagen al tamaño del botón */
+    width: 70px; /* Ancho del botón */
+    height: 70px; /* Alto del botón */
+    border: none; /* Quita el borde del botón si lo deseas */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    border-radius: 50%
+}
+
+.item-card {
+    user-select: none;
+}
+
+/* Agregar estilos CSS personalizados aquí */
+.custom-card {
+    padding: 20px; /* Agrega espacio interno al card principal */
+    margin-bottom: 40px; /* Agregar espacio inferior al card principal */
+}
+.card-title {
+    text-align: center; /* Centrar el título */
+    margin-top: 10px; /* Agregar espacio superior al título */
+}
